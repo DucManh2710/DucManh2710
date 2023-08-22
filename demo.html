@@ -2,19 +2,20 @@
 <html>
 <body>
 
-<h2>Tran Duc Manh 2121050427</h2>
-<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+<h1>Tran Duc Manh 2121050427</h1>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
+<p>The form attribute specifies the form an input element belongs to.</p>
+
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
   <input type="submit" value="Submit">
 </form>
 
-<p>Note that the form itself is not visible.</p>
-<p>Also note that the default width of a text field is 20 characters.</p>
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
 
 </body>
 </html>
