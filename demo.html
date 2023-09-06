@@ -10,19 +10,20 @@
 <body>
 
 <div class="container mt-3">
-  <h3>Tran DUc Manh</h3>
+  <h3>Tran Duc Manh</h3>
+  <p>A toast is like an alert box that is only shown for a couple of seconds when something happens (i.e. when a user clicks on a button, submits a form, etc.).</p>
+  <p>In this example, we use the .show class to always show the toast by default. You can close it by clicking on the close (x) icon inside the toast header.</p>
   
-  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">
-    Toggle popover
-  </button>
+  <div class="toast show">
+    <div class="toast-header">
+      <strong class="me-auto">Toast Header</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Some text inside the toast body</p>
+    </div>
+  </div>
 </div>
-
-<script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-</script>
 
 </body>
 </html>
