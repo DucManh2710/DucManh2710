@@ -11,21 +11,26 @@
 
 <div class="container mt-3">
   <h2>Tran Duc Manh</h2>
+  <p>To style a select menu in Bootstrap 5, add the .form-select class to the select element:</p>
   <form action="/action_page.php">
-    <div class="mb-3 mt-3">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="mb-3">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-    </div>
-    <div class="form-check mb-3">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <label for="sel1" class="form-label">Select list (select one):</label>
+    <select class="form-select" id="sel1" name="sellist1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <br>
+    
+    <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+    <select multiple class="form-select" id="sel2" name="sellist2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </form>
 </div>
 
