@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+ul{
+    background-color: bisque;
+    width: 1000px;
+    height: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+li {
+    display: inline-block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, dropdown:hover .dropbtn{
+    background-color: cadetblue;
+}
+#Hotline{
+    color: brown;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+#heading{
+    color: rgb(127, 234, 255);
+    font-style: oblique;
+}
+#background{
+    position: relative;
+    margin-top: 30px;
+    padding-top: 80%;
+    background: url(https://pizza4ps.com/wp-content/uploads/2023/08/Store-1.jpg) top center;
+}
+
+
