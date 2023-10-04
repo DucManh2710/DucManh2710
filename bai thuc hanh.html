@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        let counter = 0;
+        function count(){
+            counter++;
+            document.querySelector("#counter").innerHTML = counter;
+
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tran Duc Manh</title>
-    <script>
-        function hello(){
-            document.querySelector("h1").innerHTML = "2nd Javascript!";
-        }
-
-    </script>
 </head>
 <body>
-    <h1> Tran Duc Manh</h1>
-    <button onclick="hello()">Clich here!</button>
+    <h1 id="counter">0</h1>
+    <button onclick="count()">Click here!</button>
 </body>
 </html>
