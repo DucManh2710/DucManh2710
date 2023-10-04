@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.querySelector("button").onclick = count;
+        })
         let counter = 0;
         function count(){
-            counter++;
+            couter ++;
             document.querySelector("#counter").innerHTML = counter;
-            if (counter % 10 === 0{
-                alert("Counter is at ${counter}!");
-            })
+            if (counter % 10 === 0){
+                alert("Tran Duc Manh ${counter}!");
+            }
         }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tran Duc Manh</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1 id="counter">0</h1>
-    <button onclick="count()">Click here!</button>
+    <h1 id="counter">0  </h1>
+    <button>Click here!</button>ss
 </body>
 </html>
