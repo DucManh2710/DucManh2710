@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../javascrip"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascrip"
+	}
+}

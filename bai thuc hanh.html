@@ -4,8 +4,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function(){
             document.querySelector("#form").onsubmit = sayHello;
-
-        });
+        })
         function sayHello(){
             const name = document.querySelector("#name").value;
             alert(`Hello ${name}!`);
@@ -13,12 +12,12 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <title>Tran Duc Manh</title>
 </head>
 <body>
     <form id="form">
         <input type="text" id="name" autofocus placeholder="Name">
-        <input type="submit">
+        <input type="submit" >
     </form>
 </body>
 </html>
