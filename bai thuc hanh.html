@@ -5,14 +5,17 @@
         document.addEventListener('DOMContentLoaded', function(){
             document.querySelector('#submit').disable = true;
             document.querySelector('#task').onkeyup = function(){
-                document.querySelector('#submit').disable = false;
+                if (document.querySelector('#task').value.length > 8)
+                    document.querySelector('#submit').disable = false;
+                else
+                    document.querySelector('#submit').disable = true;
             };
             document.querySelector('#new-task').onsubmit = function(){
                 const li = document.createElement('li');
                 li.innerHTML = document.querySelector('#task').value;
-                document.querySelector('#task').append(li)
+                document.querySelector('#tasks').append(li);
                 document.querySelector('#task').value = '';
-                document.querySelector("#submit").disable = true;
+                document.querySelector('#submit').disable = true;
                 return false;
             };
         });
