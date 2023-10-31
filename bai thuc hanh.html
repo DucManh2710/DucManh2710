@@ -4,17 +4,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
   });
 });
 </script>
 </head>
 <body>
 
-<p>If you click on me, I will disappear.</p>
 <p>Tran Duc Manh 2121050427</p>
-<p>Click me too!</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
 
 </body>
 </html>
