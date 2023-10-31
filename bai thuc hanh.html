@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("h1, h2, p").removeClass("blue");
+    $("h1, h2, p").toggleClass("blue");
   });
 });
 </script>
@@ -17,13 +17,13 @@ $(document).ready(function(){
 </head>
 <body>
 
-<h1 class="blue">Heading 1</h1>
-<h2 class="blue">Heading 2</h2>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
 
-<p class="blue">Tran Duc Manh 2121050427</p>
+<p>Tran Duc Manh 2121050427</p>
 <p>This is another paragraph.</p>
 
-<button>Remove class from elements</button>
+<button>Toggle class</button>
 
 </body>
 </html>
