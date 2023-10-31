@@ -5,30 +5,33 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("p").remove(".test, .demo");
+    $("h1, h2, p").addClass("blue");
+    $("div").addClass("important");
   });
 });
 </script>
 <style>
-.test {
-  color: red;
-  font-size: 20px;
+.important {
+  font-weight: bold;
+  font-size: xx-large;
 }
 
-.demo {
-  color: green;
-  font-size: 25px;
+.blue {
+  color: blue;
 }
 </style>
 </head>
 <body>
 
-<p>Tran Duc Manh 2121050427</p>
-<p class="test">This is p element with class="test".</p>
-<p class="test">This is p element with class="test".</p>
-<p class="demo">This is p element with class="demo".</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
 
-<button>Remove all p elements with class="test" and class="demo"</button>
+<p>Tran Duc Manh 2121050427</p>
+<p>This is another paragraph.</p>
+
+<div>This is some important text!</div><br>
+
+<button>Add classes to elements</button>
 
 </body>
 </html>
