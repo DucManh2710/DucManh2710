@@ -4,17 +4,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
   });
 });
 </script>
 </head>
 <body>
 
-<p id="p1">jQuery is fun!!</p>
+<p id="test">Tran Duc Manh 2121050427 <b>bold</b> text in a paragraph.</p>
 
-<button>Tran Duc Manh 2121050427</button>
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
 
 </body>
 </html>
