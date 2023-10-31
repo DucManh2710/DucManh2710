@@ -13,27 +13,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parent().css({"color": "red", "border": "2px solid red"});
+  $("span").parents("ul").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
-<body>
 
-<div class="ancestors">
+<body class="ancestors">body (great-great-grandparent)
   <div style="width:500px;">div (great-grandparent)
     <ul>ul (grandparent)  
-      <li>li (direct parent)
+      <li>Tran DUc Manh 2121050427
         <span>span</span>
       </li>
     </ul>   
   </div>
-
-  <div style="width:500px;">div (grandparent)   
-    <p>Tran Duc Manh 2121050427
-      <span>span</span>
-    </p> 
-  </div>
-</div>
-
 </body>
+
 </html>
