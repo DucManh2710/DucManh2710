@@ -5,18 +5,16 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("p").hide("slow", function(){
-      alert("The paragraph is now hidden");
-    });
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
   });
 });
 </script>
 </head>
 <body>
 
-<button>Hide</button>
+<p id="p1">jQuery is fun!!</p>
 
-<p>Tran Duc Manh 2121050427</p>
+<button>Tran Duc Manh 2121050427</button>
 
 </body>
 </html>
