@@ -4,21 +4,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("#btn1").click(function(){
-    alert("Text: " + $("#test").text());
-  });
-  $("#btn2").click(function(){
-    alert("HTML: " + $("#test").html());
+  $("button").click(function(){
+    $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
   });
 });
 </script>
 </head>
 <body>
 
-<p id="test">Tran Duc Manh 2121050427 <b>bold</b> text in a paragraph.</p>
+<p><a href="https://www.w3schools.com" id="w3s">Tran Duc Manh 2121050427</a></p>
 
-<button id="btn1">Show Text</button>
-<button id="btn2">Show HTML</button>
+<button>Change href Value</button>
+
+<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
 
 </body>
 </html>
