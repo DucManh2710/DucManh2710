@@ -13,16 +13,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parents("ul").css({"color": "red", "border": "2px solid red"});
+  $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
 
-<body class="ancestors">body (great-great-grandparent)
+<body class="ancestors"> body (great-great-grandparent)
   <div style="width:500px;">div (great-grandparent)
     <ul>ul (grandparent)  
-      <li>Tran DUc Manh 2121050427
-        <span>span</span>
+      <li>li (direct parent)
+        <span>Tran Duc Manh 2121050427</span>
       </li>
     </ul>   
   </div>
