@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    var txt = "";
-    txt += "Width of div: " + $("#div1").width() + "</br>";
-    txt += "Height of div: " + $("#div1").height();
-    $("#div1").html(txt);
-  });
+  $("span").parent().css({"color": "red", "border": "2px solid red"});
 });
 </script>
-<style>
-#div1 {
-  height: 100px;
-  width: 300px;
-  padding: 10px;
-  margin: 3px;
-  border: 1px solid blue;
-  background-color: lightblue;
-}
-</style>
 </head>
 <body>
 
-<div id="div1"></div>
-<br>
+<div class="ancestors">
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
 
-<button>Display dimensions of div</button>
-
-<p>Tran Duc Manh 2121050427</p>
-<p>height() - returns the height of an element.</p>
+  <div style="width:500px;">div (grandparent)   
+    <p>Tran Duc Manh 2121050427
+      <span>span</span>
+    </p> 
+  </div>
+</div>
 
 </body>
 </html>
