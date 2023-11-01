@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-.descendants * { 
+.siblings * { 
   display: block;
   border: 2px solid lightgrey;
   color: lightgrey;
@@ -13,19 +13,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").children("p.first").css({"color": "red", "border": "2px solid red"});
+  $("h2").siblings().css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
-<body>
+<body class="siblings">
 
-<div class="descendants" style="width:500px;">div (current element) 
-  <p class="first">Tran Duc Manh 2121050427
-    <span>span (grandchild)</span>   
-  </p>
-  <p class="second">p (child)
-    <span>span (grandchild)</span>
-  </p> 
+<div>div (parent)
+  <p>Tran Duc Manh 2121050427</p>
+  <span>span</span>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <p>p</p>
 </div>
 
 </body>
