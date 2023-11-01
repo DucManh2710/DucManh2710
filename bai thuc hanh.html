@@ -13,27 +13,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parent().css({"color": "red", "border": "2px solid red"});
+  $("span").parents().css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
-<body>
 
-<div class="ancestors">
+<body class="ancestors">body (great-great-grandparent)
   <div style="width:500px;">div (great-grandparent)
-    <ul>ul (grandparent)  
+    <ul>Tran Duc Manh 2121050427  
       <li>li (direct parent)
         <span>span</span>
       </li>
     </ul>   
   </div>
-
-  <div style="width:500px;">div (grandparent)   
-    <p>Tran Duc Manh
-      <span>span</span>
-    </p> 
-  </div>
-</div>
-
 </body>
+
+<!-- The outer red border, before the body element, is the html element (also an ancestor) -->
 </html>
