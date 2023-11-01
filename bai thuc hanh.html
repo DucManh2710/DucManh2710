@@ -13,17 +13,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").find("*").css({"color": "red", "border": "2px solid red"});
+  $("div").children("p.first").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
 <body>
 
 <div class="descendants" style="width:500px;">div (current element) 
-  <p>Tran Duc Manh 2121050427
+  <p class="first">Tran Duc Manh 2121050427
     <span>span (grandchild)</span>   
   </p>
-  <p>p (child)
+  <p class="second">p (child)
     <span>span (grandchild)</span>
   </p> 
 </div>
