@@ -13,12 +13,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parents().css({"color": "red", "border": "2px solid red"});
+  $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
 
-<body class="ancestors">body (great-great-grandparent)
+<body class="ancestors"> body (great-great-grandparent)
   <div style="width:500px;">div (great-grandparent)
     <ul>Tran Duc Manh 2121050427  
       <li>li (direct parent)
@@ -28,5 +28,4 @@ $(document).ready(function(){
   </div>
 </body>
 
-<!-- The outer red border, before the body element, is the html element (also an ancestor) -->
 </html>
