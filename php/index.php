@@ -5,14 +5,8 @@
     <title></title>
 </head>
 <body>
-    <form action="5-formGet.php" method="get">       
-        <p>Name: </p>
-        <input type="text" name="name"><br>
-        <p>Email: </p>
-        <input type="text" name="email"><br>
-        <p></p>
-        <input type="submit">
-    </form>
+    Welcome <?php echo $_GET["name"]; ?><br>
+    Your email address is: <?php echo $_GET["email"]; ?>
 </body>
 </html>
 
