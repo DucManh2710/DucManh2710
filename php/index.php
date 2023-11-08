@@ -5,13 +5,20 @@
     <title></title>
 </head>
 <body>
-    <form action="7-CalResult.php" method="get">       
-        <p>First Number: </p>
-        <input type="number" name="firstNumber"><br>
-        <p>Second Number: </p>
-        <input type="number" name="secondNumber"><br>
+    <form action="link.php" method="get">       
+        <p> Ten: </p>
+        <input type="text" name="ten"><br>
+        <p> Email: </p>
+        <input type="text" name="email"><br>
+        <p> Nam sinh</p>
+        <input type="text" name="namsinh"><br>
+        <p> Truong hoc</p>
+        <input type="text" name="truong"><br>
+        <p> Lop</p>
+        <input type="text" name="lop"><br>
         <p></p>
-        <input type="submit" value="Add">
+        <input type="submit">
+
     </form>
 </body>
 </html>
