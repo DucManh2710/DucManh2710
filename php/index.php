@@ -1,8 +1,11 @@
 <?php
-$longAccount = 10000000;
-echo " So tien trong tai khoan Long: $longAccount";
-$HUMGPay = 10000000;
-echo " HUMG chuyen tien: $HUMGPay";
-$longAccount = $longAccount + $HUMGPay;
-echo "So tien trong tai khoan Long: $longAccount";
+$Subject = "Lap trinh ung dung web ";
+$UniversityName = "HUMG";
+$firtsNumber = 2;
+$secondtNumber = 2;
+
+echo " Hoc ". $Subject . "o phong hoc 502 tai truong " . $UniversityName . "<br>";
+echo " Hoc $Subject o phong 502 tai truong $UniversityName <br> ";
+echo " <h1> $UniversityName </h1>";
+echo $firtsNumber + $secondtNumber;
 ?>
