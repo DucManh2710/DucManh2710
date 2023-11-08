@@ -6,10 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    Xin chao: <?php echo $_GET["ten"]; ?><br>
-    Email cua ban la:   <?php echo $_GET["email"]; ?><br> 
-    Tuoi cua ban la: <?php echo 2023 - $_GET["namsinh"] ; ?><br>
-    Ban dang hoc truong: <?php echo $_GET["truong"]; ?><br>
-    Ban dang hoc lop:   <?php echo $_GET["lop"]; ?><br>
+   <?php
+        $firstnumber = $_GET["firstnumber"];
+        $secondnumber = $_GET["secondnumber"];
+        if($firstnumber < $secondnumber)
+        $max = $secondnumber;
+        else
+        $max = $firstnumber;
+         echo "So lon hon la: $max";
+    ?>
 </body>
 </html>
