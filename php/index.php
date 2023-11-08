@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
 <?php
-    echo 'My first PHP file';
-    echo '<h3> Hello World!</h3>';
-    echo '<select>';
-    echo "<option>1</option>";
-    echo "<option>2</option>";
-    echo "</select>";
+$longAccount = 10000000;
+echo " So tien trong tai khoan Long: $longAccount";
+$HUMGPay = 10000000;
+echo " HUMG chuyen tien: $HUMGPay";
+$longAccount = $longAccount + $HUMGPay;
+echo "So tien trong tai khoan Long: $longAccount";
 ?>
-</body>
-</html>
