@@ -5,8 +5,14 @@
     <title></title>
 </head>
 <body>
-    Welcome <?php echo $_GET["name"]; ?><br>
-    Your email address is: <?php echo $_GET["email"]; ?>
+    <form action="7-CalResult.php" method="get">       
+        <p>First Number: </p>
+        <input type="number" name="firstNumber"><br>
+        <p>Second Number: </p>
+        <input type="number" name="secondNumber"><br>
+        <p></p>
+        <input type="submit" value="Add">
+    </form>
 </body>
 </html>
 
