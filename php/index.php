@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <form action="link.php" method="get">       
-        <p>FirstNumber: </p>
-        <input type="text" name="firstnumber"><br>
-        <p>SecondNumber: </p>
-        <input type="text" name="secondnumber"><br>
-        <p></p>
-        <input type="submit">
+    <?php
+    $T = True;
+    $F = False;
+    echo "T = $T <br>";
+    echo "F = $F <br>";
 
-
-    </form>
+    $check1 = 10 > 5;
+    $check2 = 20 < 10;
+    $check3 = $check1 && $check2;
+    $check4 = $check1 || $check2;
+    echo "check1 = $check1 <br>";
+    echo "check2 = $check2 <br>";
+    echo "check3 = $check3 <br>";
+    echo "check4 = $check4 ";
+    ?>
 </body>
 </html>
-

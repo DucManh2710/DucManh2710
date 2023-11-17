@@ -7,13 +7,11 @@
 </head>
 <body>
    <?php
-        $firstnumber = $_GET["firstnumber"];
-        $secondnumber = $_GET["secondnumber"];
-        if($firstnumber < $secondnumber)
-        $max = $secondnumber;
-        else
-        $max = $firstnumber;
-         echo "So lon hon la: $max";
-    ?>
+        $a = $_GET["a"];
+        $b = $_GET["b"];
+        $c = $_GET["c"];
+        $delta = ($b*$b)-4*$a*$c;
+        if($delta < 0 )
+        echo 
 </body>
 </html>
