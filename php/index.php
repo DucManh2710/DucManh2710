@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>t</title>
 </head>
 <body>
-    <?php
-    $T = True;
-    $F = False;
-    echo "T = $T <br>";
-    echo "F = $F <br>";
-
-    $check1 = 10 > 5;
-    $check2 = 20 < 10;
-    $check3 = $check1 && $check2;
-    $check4 = $check1 || $check2;
-    echo "check1 = $check1 <br>";
-    echo "check2 = $check2 <br>";
-    echo "check3 = $check3 <br>";
-    echo "check4 = $check4 ";
-    ?>
+    <h3>Quit The Game</h3>
+    <form action="link.php" method = "get">
+            <select name="response" >
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+            </select>
+            <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
