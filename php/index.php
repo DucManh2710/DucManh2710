@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>t</title>
+    <title></title>
 </head>
 <body>
-    <h3>Quit The Game</h3>
-    <form action="link.php" method = "get">
-            <select name="response" >
-                    <option value="yes">YES</option>
-                    <option value="no">NO</option>
-            </select>
-            <input type="submit" value="Submit">
-    </form>
+    <?php
+    echo "THE GAME";
+    if ($_GET["response"] == "yes")
+    {
+        echo " HAS BEEN QUITED";
+    }
+    else
+    {
+        echo "WILL BE CONTINUE IN 3 SECONDS";
+    }
+    echo "<br>AFTER IF STATEMENT";
+    ?>
 </body>
 </html>
