@@ -6,15 +6,24 @@
     <title></title>
 </head>
 <body>
-    <form action="link.php" method = "get">
-        <p>DIEM TOAN: </p>
-        <input type="text" name="DIEMTOAN" ><br>
-        <p>DIEM LY: </p>
-        <input type="text" name="DIEMLY" ><br>
-        <p>DIEM HOA: </p>
-        <input type="text" name="DIEMHOA" ><br>
-        <p></p>
-        <input type="submit">
-    </form>
+    <?php
+        $currency = $_GET['currency'];
+        echo " $amount $currency is equal ";
+        switch ($currency)
+        {
+            case "USD":
+                echo $amount * $USD;
+                break;
+            case "EUR":
+                echo $amount * $EUR;
+                break;
+            case "SGD":
+                echo $amount * $SGD;
+                break;
+            case "JPY":
+                echo $amount * $JPY;
+                break;
+        }
+    ?>
 </body>
 </html>
