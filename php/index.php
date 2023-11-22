@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
 </head>
 <body>
     <?php
-    echo "THE GAME";
-    if ($_GET["response"] == "yes")
+    $USD = 22300;
+    $EUR = 27300;
+    $SGD = 17000;
+    $JPY = 120;
+    $amount = $_GET['amount'];
+    echo " $amount USD is equal ";
+    if ( $_GET["currency"] == "USD")
     {
-        echo " HAS BEEN QUITED";
+        echo " $amount * $USD";
+    }
+    elseif ($_GET["currency"] == "EUR"){
+        echo " $amount * $EUR";
+    }
+    elseif ($_GET["currency"] == "SGD"){
+        echo " $amount * $SGD";
     }
     else
     {
-        echo "WILL BE CONTINUE IN 3 SECONDS";
+        echo " $amount * $JPY";
     }
-    echo "<br>AFTER IF STATEMENT";
+    echo "VND";
     ?>
 </body>
 </html>
