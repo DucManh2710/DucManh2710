@@ -6,13 +6,15 @@
     <title></title>
 </head>
 <body>
-    <?php
-        $exchangeRate = array(22300, 27300, 17000, 120);
-        echo " <h3>Exchange rate to VND</h3>"
-        echo " USD: $exchangeRate[0]<br>";
-        echo " EUR: $exchangeRate[1]<br>";
-        echo " SGD: $exchangeRate[2]<br>";
-        echo " JPY: $exchangeRate[3]<br>";
-    ?>
+    <form action="link.php" method = "get">
+        <p>DIEM TOAN: </p>
+        <input type="text" name="DIEMTOAN" ><br>
+        <p>DIEM LY: </p>
+        <input type="text" name="DIEMLY" ><br>
+        <p>DIEM HOA: </p>
+        <input type="text" name="DIEMHOA" ><br>
+        <p></p>
+        <input type="submit">
+    </form>
 </body>
 </html>
