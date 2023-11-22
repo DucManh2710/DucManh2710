@@ -3,31 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
     <?php
-    $USD = 22300;
-    $EUR = 27300;
-    $SGD = 17000;
-    $JPY = 120;
-    $amount = $_GET['amount'];
-    echo " $amount USD is equal ";
-    if ( $_GET["currency"] == "USD")
-    {
-        echo " $amount * $USD";
-    }
-    elseif ($_GET["currency"] == "EUR"){
-        echo " $amount * $EUR";
-    }
-    elseif ($_GET["currency"] == "SGD"){
-        echo " $amount * $SGD";
-    }
-    else
-    {
-        echo " $amount * $JPY";
-    }
-    echo "VND";
+        $exchangeRate = array(22300, 27300, 17000, 120);
+        echo " <h3>Exchange rate to VND</h3>"
+        echo " USD: $exchangeRate[0]<br>";
+        echo " EUR: $exchangeRate[1]<br>";
+        echo " SGD: $exchangeRate[2]<br>";
+        echo " JPY: $exchangeRate[3]<br>";
     ?>
 </body>
 </html>
