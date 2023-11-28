@@ -7,19 +7,21 @@
 </head>
 <body>
 <?php
-    $items = array('anh1.png','anh2.png');
-    foreach ($items as $item)
+    function dislay_image_list($imagelist)
     {
-        echo " <img src='images/$item' width = 50px height = 50px alt='$item'>";
+        foreach ($imagelist as $item)
+        {
+            echo "<img src='images/$item'
+            width = 50px height 50px alt = '$item'>";
+        }
     }
+    $items  = array('anh1.png','anh2.png');
+    dislay_image_list($items);
 ?>
 <h1>function</h1>
 <?php
-    $items = array('anh3.png','anh4.png');
-    foreach ($items as $item)
-    {
-        echo " <img src='images/$item' width = 50px height = 50px alt='$item'>";
-    }
+    $items  = array('anh3.png','anh4.png');
+    dislay_image_list($items);
 ?>
 </body>
 </html>
