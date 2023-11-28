@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
 </head>
 <body>
-    <?php
-        $exchangeRate = array("USD" >=22300, "EUR">=27300, "SGD">=17000, "JPY">=120);
-        $amount = $_GET['amount'];
-        $currency = $_GET["currency"];
-        echo " $amount USD is equal " . number_format($amount * $exchangeRate[$currency]) . " VND";
-    ?>
+<?php
+    $items = array('anh1.png','anh2.png');
+    foreach ($items as $item)
+    {
+        echo " <img src='images/$item' width = 50px height = 50px alt='$item'>";
+    }
+?>
 </body>
 </html>
