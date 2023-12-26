@@ -27,4 +27,4 @@
     }
 ?>
 <br>
-<a href="index.php">Quay lại trang đã đăng kí</a>
+<a href="index.html">Quay lại trang đã đăng kí</a>

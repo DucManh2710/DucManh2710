@@ -29,4 +29,4 @@ if (isset($_POST['login'])) {
     }
 ?>
 <br>
-<a href="index.php">Quay lại trang đã đăng nhập</a>
+<a href="index.html">Quay lại trang đã đăng nhập</a>

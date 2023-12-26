@@ -150,7 +150,7 @@
             if ($row) {
                 if (password_verify($password, $row['password'])) {
                     echo "<script>alert('Đăng nhập thành công')</script>";
-                    header("Location: index.php");
+                    header("Location: index.html");
                 } else {
                     echo "<script>alert('Mật khẩu không đúng')</script>";
                 }
